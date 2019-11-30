@@ -25,6 +25,8 @@ RUN apt-get install -y vim tmux man htop
 
 RUN pip install progressbar2
 
+RUN pip install jupyter_contrib_nbextensions
+
 RUN conda install -y scikit-image
 
 RUN jupyter notebook --generate-config --allow-root && \
@@ -41,7 +43,6 @@ WORKDIR /home/playground
 CMD [ "/bin/bash" ]
 
 COPY dataset.ipynb /home/playground/
-COPY homework.ipynb /home/playground/
 COPY pytorch.ipynb /home/playground/
 COPY utils.py /home/playground/
 COPY salt.py /home/playground/
