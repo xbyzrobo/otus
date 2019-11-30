@@ -27,3 +27,9 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### Others
+*.pdf
+*.ppt*
+*.env
+*.yml
