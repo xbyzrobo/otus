@@ -33,3 +33,6 @@ nbdist/
 *.ppt*
 *.env
 *.yml
+__pycache__/
+.ipynb_checkpoints/
+MNIST_data/
